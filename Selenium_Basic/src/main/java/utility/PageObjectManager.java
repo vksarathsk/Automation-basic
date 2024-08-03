@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import pageobject.AlertLeafgroundPage;
 import pageobject.AmazonHomepage;
 import pageobject.AmazonSearchpage;
+import pageobject.DropdownLeafgroundPage;
 
 public class PageObjectManager {
 
@@ -24,6 +25,10 @@ public class PageObjectManager {
     public AlertLeafgroundPage AlertLeafgroundPage (){
         AlertLeafgroundPage alertLeafgroundPage = new AlertLeafgroundPage(driver);
         return alertLeafgroundPage;
+    }
+    public DropdownLeafgroundPage getDropdownLeafgroundpage(){
+        DropdownLeafgroundPage dropdownLeafgroundPage = new DropdownLeafgroundPage(driver);
+        return dropdownLeafgroundPage;
     }
 
 }

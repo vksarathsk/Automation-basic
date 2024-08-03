@@ -8,3 +8,11 @@ Feature: Access to Leafground page elements
     And Accept the Alert Model
     Then Verify the UI text
 
+  @DropdownLeafground
+Scenario Outline: Handle Dropdown
+  Given Go to the Drodown page
+  Then Select favorite UI Automation tool "<SelectTool>"
+
+  Examples:
+    | SelectTool |
+    | Selenium   |

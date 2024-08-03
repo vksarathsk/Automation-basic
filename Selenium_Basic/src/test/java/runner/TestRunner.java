@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/feature"},
         glue = {"stepdefinition"},
-        tags = "@AlertModel"
+        tags = "@DropdownLeafground"
 )
 public class TestRunner {
 

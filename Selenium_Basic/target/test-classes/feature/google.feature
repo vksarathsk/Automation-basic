@@ -6,10 +6,10 @@ Feature: features to test google search functionality
     And  hits enter
     Then user is navigated to search results
 
+  @smoketest
   Scenario: Amazon dropdown validation
-    Given user navigate to Amazon home page
-    When get the dropdown values
-    And select value option
+    Given get the dropdown values
+    Then select value option
 
     Scenario Outline: OrangeHRM Login page validation
       Given User is on OrangeHRM login page
@@ -22,7 +22,7 @@ Feature: features to test google search functionality
         | Username | Password |
         | Admin    | admin123 |
 
-  @smoketest
+
   Scenario Outline: Amazon dropdown validation
 
     When select the dropdown value for "<DropdownValue>"
